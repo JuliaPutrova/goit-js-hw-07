@@ -44,3 +44,43 @@ const refs = {
 	    refs.input.value = '';
 	});
 
+
+
+
+	//////решение с ментором
+// 	const refs = {
+//   input: document.querySelector("input"),
+//   buttonRender: document.querySelector('[data-action="render"]'),
+//   buttonDestroy: document.querySelector('[data-action="destroy"]'),
+//   boxesDivRef: document.getElementById("boxes"),
+// };
+
+// // ======== createRandom Colors ====================
+// function createRandomColor() {
+//   return `rgb(${(Math.random() * 255) << 0}, ${(Math.random() * 255) << 0}, ${
+//     (Math.random() * 255) << 0
+//   })`;
+// }
+
+// refs.buttonRender.addEventListener("click", () =>
+//   createBoxes(+refs.input.value)
+// );
+
+// function createBoxes(amount) {
+//   let size = 30;
+//   const elements = [];
+//   refs.boxesDivRef.innerHTML = "";
+//   for (let i = 0; i < amount; i += 1) {
+//     const div = document.createElement("div");
+//     div.style.width = size + "px";
+//     div.style.height = size + "px";
+//     size += 10;
+//     div.style.backgroundColor = createRandomColor();
+//     elements.push(div);
+//   }
+//   refs.boxesDivRef.append(...elements);
+// }
+
+// refs.buttonDestroy.addEventListener(
+//   "click",
+//   () => ((refs.boxesDivRef.innerHTML
